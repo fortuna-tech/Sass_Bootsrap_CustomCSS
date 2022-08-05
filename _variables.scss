@@ -1,0 +1,17 @@
+// 
+// Variables
+// 
+// Import Bootstrap variables for use within theme
+@import "./bootstrap/scss/functions";
+@import "./bootstrap/scss/variables";
+
+//引入自定义全局变量
+@import "./variables/customs";
+
+// Import spacing variables
+@import "./variables/spacing";
+
+// Import navigation variables
+@import "./variables/navigation";
+
+

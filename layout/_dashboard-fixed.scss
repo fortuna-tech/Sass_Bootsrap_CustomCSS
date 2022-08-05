@@ -1,0 +1,32 @@
+// 
+// Fixed dashboard layout
+// 
+
+.cs-nav-fixed {
+    .cs-topnav {
+        @extend .fixed-top;
+        z-index: $zindex-topnav;
+    }
+
+    #layoutSidenav {
+        #layoutSidenav_nav {
+            @extend .fixed-top;
+            width: $sidenav-base-width;
+            height: 100vh;
+            z-index: $zindex-sidenav;
+
+            .cs-sidenav {
+                padding-top: $topnav-base-height;
+
+                .cs-sidenav-menu {
+                    overflow-y: auto;
+                }
+            }
+        }
+
+        #layoutSidenav_content {
+            padding-left: $sidenav-base-width;
+            top: $topnav-base-height;
+        }
+    }
+}
